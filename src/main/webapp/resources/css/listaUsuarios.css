@@ -1,0 +1,27 @@
+body{
+	text-align: center;
+}
+
+#form{
+	width: auto; 
+ 	padding: 2vh; 
+ 	border: 1px solid #eee; 
+	border-radius: 6px; 
+	background-color: #FFF; 
+	font-size: 18px; 
+ 	display: inline-block; 
+ 	position: relative; 
+ 	margin:2vh;
+ 	margin-top:10vh;
+ 	text-align: left;
+ 	border: 2px solid #e0491b;
+}
+
+.semBorda tr, .semBorda td, .ui-grid{
+	border: none !important;
+}
+
+.botao{
+	float: left;
+	margin-left: 1vh;
+}

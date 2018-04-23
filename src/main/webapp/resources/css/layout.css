@@ -1,0 +1,48 @@
+html, body {
+	background: #EAEAEA;
+	height: 100%;
+	margin: 0;
+}
+
+a :HOVER{
+	color: red;
+}
+.cabecalho{
+	color: white;
+	background: #2e3436;
+    position:absolute;
+    margin-top: 0;
+    padding-bottom: 2vh;
+    width:100%;
+}
+
+.wrapper {
+	min-height:100%;
+    position:relative;
+    width:800px;
+	
+}
+
+.footer {
+	color: white;
+	background: #2e3436;
+    position:absolute;
+    bottom:0;
+    padding-top:2vh;
+    padding-bottom:2vh;
+    width:100%;
+}
+
+.botao{
+	border-radius: 7px;
+	padding: 1vh;
+	margin-right: 20px;
+	color:white;
+	background:#e0491b;
+	border: 1px solid #2e3436;
+	float:right;
+	margin-top:1vh;
+	text-decoration:none;
+	font-weight: bold;
+
+}

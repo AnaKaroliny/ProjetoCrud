@@ -1,0 +1,34 @@
+body{	
+ 	text-align: center;
+	position: absolute;
+	width: 100%; 
+	background: #EAEAEA;
+	
+}
+h3{
+	text-align: center;
+	background: #e0491b;
+	border-radius: 6px;
+	color: white; 
+	padding: 10px;
+}
+
+#form{
+	width: 480px; 
+ 	padding: 2vh; 
+ 	border: 1px solid #eee; 
+	border-radius: 6px; 
+	background-color: #FFF; 
+	font-size: 18px; 
+ 	display: inline-block; 
+ 	position: relative; 
+ 	margin-top: 20vh;
+ 	text-align: left;
+ 	border: 2px solid #2e3436;
+ 	
+}
+
+.input{
+	border: 1px solid #e0491b;
+	width: 370px;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>CADASTRAR USUÁRIO</title>
+	<h:outputStylesheet library="css" name="layout.css" />
+	<h:outputStylesheet library="css" name="cadastroUsuario.css" />
+</h:head>
+<h:body>
+	<div class="cabecalho">
+		<p:link value="Listar Usuários" outcome="ListaUsuarios.xhtml"
+			styleClass="botao" />
+	</div>
+	<h:form id="form">
+		<p:messages id="msg" closable="true" />
+		<h3>CADASTRAR USUÁRIO</h3>
+		<h:panelGrid id="cadastro" columns="2">
+			<p:outputLabel value="Nome: " />
+			<p:inputText class="input"
+				value="#{cadastroUsuarioBean.usuario.nome}" required="true"
+				requiredMessage="Campo nome obrigatório!" />
+
+			<p:outputLabel value="Matricula: " />
+			<p:inputText class="input"
+				value="#{cadastroUsuarioBean.usuario.matricula}" required="true"
+				requiredMessage="Campo matricula obrigatório!" />
+
+			<p:outputLabel value="Idade: " />
+			<p:inputText class="input"
+				value="#{cadastroUsuarioBean.usuario.idade}" />
+
+			<p:outputLabel value="Endereço: " />
+			<p:inputText class="input"
+				value="#{cadastroUsuarioBean.usuario.endereco}" />
+
+			<p:outputLabel value="Email: " />
+			<p:inputText class="input"
+				value="#{cadastroUsuarioBean.usuario.email}" />
+		</h:panelGrid>
+		<h:panelGroup>
+			<p:commandButton action="#{cadastroUsuarioBean.salvarUsuario}"
+				update="form:msg form:cadastro" value="CADASTRAR"
+				class="btnCadastrar"  styleClass="botao"/>
+		</h:panelGroup>
+	</h:form>
+	<div class="footer">CRUD</div>
+
+</h:body>
+</html>
